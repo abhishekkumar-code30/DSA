@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ValidTriangle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the three sides of a triangle:");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        
+        // Sum of any two sides must be strictly greater than the third
+        if (a + b > c && b + c > a && c + a > b) {
+            System.out.println("This is a valid triangle.");
+        } else {
+            System.out.println("This is an invalid triangle.");
+        }
+        sc.close();
+    }
+}
