@@ -6,7 +6,6 @@ public class RealNumberCheck {
         System.out.print("Enter a real number (e.g., 7.5 or 7.0): ");
         double n = sc.nextDouble();
         
-        // Subtracting the casted integer from the original double
         if (n - (int)n == 0) {
             System.out.println("This is a whole integer.");
         } else {

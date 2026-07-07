@@ -8,7 +8,6 @@ public class ProfitLoss {
         System.out.print("Enter Selling Price: ");
         int sp = sc.nextInt();
         
-        // else-if ladder for mutually exclusive conditions
         if (sp > cp) {
             System.out.println("Profit of: " + (sp - cp));
         } else if (cp > sp) {

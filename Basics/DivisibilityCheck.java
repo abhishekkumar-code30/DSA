@@ -5,12 +5,10 @@ public class DivisibilityCheck {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
-        
-        // Logical AND (&&): Both conditions must be met
+
         if (n % 5 == 0 && n % 3 == 0) {
             System.out.println("Divisible by BOTH 5 and 3.");
-        } 
-        // Logical OR (||): At least one condition must be met
+        }
         else if (n % 5 == 0 || n % 3 == 0) {
             System.out.println("Divisible by EITHER 5 or 3.");
         } else {
