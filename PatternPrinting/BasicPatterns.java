@@ -17,6 +17,7 @@ public class BasicPatterns {
         System.out.print("=======================\n");
         InvertedStar.printInvertedStar(number);
         System.out.print("=======================\n");
+        InvertedNumber.printInvertedNumber(number);
 
         scan.close();
     }    
@@ -91,6 +92,21 @@ class InvertedStar{
         for(int i=n;i>0;i--){
             for(int j=i;j>0;j--){
                 System.out.print("* ");
+            }
+            System.out.print("\n");
+        }
+    }
+}
+
+//======================
+// Inverted Number
+//======================
+
+class InvertedNumber{
+    public static void printInvertedNumber(int n){
+        for(int i=n;i>0;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
             }
             System.out.print("\n");
         }
