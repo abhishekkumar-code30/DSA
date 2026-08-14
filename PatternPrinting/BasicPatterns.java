@@ -15,7 +15,8 @@ public class BasicPatterns {
         System.out.print("=======================\n");
         RepeatingTriangle.printRepeatingTriangle(number);
         System.out.print("=======================\n");
-        
+        InvertedStar.printInvertedStar(number);
+        System.out.print("=======================\n");
 
         scan.close();
     }    
@@ -75,6 +76,21 @@ class RepeatingTriangle{
         for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
                 System.out.print(i);
+            }
+            System.out.print("\n");
+        }
+    }
+}
+
+//======================
+// Inverted Star
+//======================
+
+class InvertedStar{
+    public static void printInvertedStar(int n){
+        for(int i=n;i>0;i--){
+            for(int j=i;j>0;j--){
+                System.out.print("* ");
             }
             System.out.print("\n");
         }
